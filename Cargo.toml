@@ -1,0 +1,24 @@
+[package]
+name = "ezpgp"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "ezpgp"
+path = "src/main.rs"
+
+[dependencies]
+sequoia-openpgp = "1.21"
+crossterm = "0.28"
+redb = "2.2"
+zeroize = { version = "1.8", features = ["derive"] }
+rpassword = "7.3"
+thiserror = "2.0"
+dirs = "5.0"
+anyhow = "1.0"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+strip = true
