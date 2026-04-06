@@ -2,6 +2,15 @@
 name = "ezpgp"
 version = "0.1.0"
 edition = "2021"
+description = "A minimal, auditable PGP encryption tool for secure messaging"
+license = "MIT"
+repository = "https://github.com/saefstroem/ezpgp"
+homepage = "https://github.com/saefstroem/ezpgp"
+documentation = "https://github.com/saefstroem/ezpgp"
+keywords = ["pgp", "encryption", "privacy", "security", "tui"]
+categories = ["command-line-utilities", "cryptography"]
+readme = "README.md"
+exclude = ["ARCHITECTURE.md", "QUICKSTART.md"]
 
 [[bin]]
 name = "ezpgp"
